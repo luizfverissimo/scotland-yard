@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import StartScreen from '../screens/StartScreen'
 import CaseSelection from '../screens/CaseSelection'
+import ClueSelection from '../screens/ClueSelection'
+import ClueScreen from '../screens/ClueScreen'
 
 const AppStack = createStackNavigator();
 
@@ -14,6 +16,8 @@ const AppNavigator = () => {
       <AppStack.Navigator screenOptions={{headerShown: false}} >
         <AppStack.Screen name='start' component={StartScreen} />
         <AppStack.Screen name='caseSelection' component={CaseSelection} />
+        <AppStack.Screen name='clueSelection' component={ClueSelection} />
+        <AppStack.Screen name='clueScreen' component={ClueScreen} />
       </AppStack.Navigator>
     </NavigationContainer>
   )

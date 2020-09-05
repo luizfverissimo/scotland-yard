@@ -3,6 +3,7 @@
     {
       "caso": "01",
       "nomecaso": "O caso do homem profano",
+      "desc": "Um estranho pregador chegou à cidade com uma grande Bíblia de encadernação marroquina debaixo do braço. Naquela noite, ele foi ao teatro assistir uma apresentação de Hamlet, pouco depoius foi encontrado, em um dos camarotes, morto por um objeto perfuro cortante",
       "farm": "Earl Akitern tem constantes dores de cabeça.",
       "banc": "O duque de Lacourt é um conhecido colecionardo de manuscritos originais.",
       "estac": "Akintern foi visto lendo a Bíblia para a vítma e para o duque de Lacourt um dia antes do crime.",
@@ -21,6 +22,7 @@
     {
       "caso": "02",
       "nomecaso": "O caso do Inventor morto",
+      "desc": "O sr. e a sra. Henry Foster, de Yorkshire, faziam parte de um grande grupo que se hospedara no hotel para uma convenção de inventores. Ontem de manhã, Henry foi encontrado morto em seu quarto, esfaqueado no tórax.",
       "farm": "A faca no peito de Foster não foi enfiada por mão humana.",
       "banc": "O sr. Foster e a sra. Walton trabalharam juntos em várias invenções.",
       "estac": "Pista do Assissino (2 partes): I)Que pessoa ou coisa (entre várias)?",
@@ -39,13 +41,14 @@
     {
       "caso": "03",
       "nomecaso": "O caso de Mecha Prateada",
+      "desc": "Ontem de manhã, o famoso puro-sangue Mecha Prateada e seu treinador foram encontrados mortas na baia do cavalo nos estábulos Cosgrove.",
       "farm": "O chão da baia de Mecha Prateada tinha pingos frescos de tinta.",
       "banc": "Reginald Cosgrove fizera um seguro valioso para seu cavalo Mecha Prateada.",
       "estac": "Pista da Arma (3 partes): I)Unha afiada e curva que as feras e aves de rapina possuem.",
       "docas": "Pista do Assassino (2 partes): I)Costura (verbo).",
       "hotel": "Respingos frescos de tinta cinza foram encontrados no chão da baia de Diabo Negro, outro cavalo de Reginald.",
       "chav": "(sem pistas)",
-      "museu": "Pista do Motivo (2 partes): II) Líder esperitual.",
+      "museu": "Pista do Motivo (2 partes): II) Líder espiritual.",
       "livra": "Pista do Motivo (2 partes): I) Indica condição.",
       "parq": "Pista do Assassino (2 partes): II)O oposto de agudo.",
       "cpen": "O recibo de penhor encontrado na cena do crime pertencia a Reginald Cosgrove",
@@ -56,7 +59,8 @@
     },
     {
       "caso": "04",
-      "nomecaso": "",
+      "nomecaso": "Lorem ipsum dolor sit amet",
+      "desc": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet",
       "farm": "",
       "banc": "",
       "estac": "",

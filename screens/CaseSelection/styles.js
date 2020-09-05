@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   listItemContainer: {
     backgroundColor: colors.carBackground,
     width: '100%',
-    height: 280,
+    minHeight: 200,
     marginVertical: 14,
     borderRadius: 8
   },
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     alignItems: 'center',
-    marginTop: 10
+    marginTop: 10,
+    marginBottom: 20
   }
 })
 
