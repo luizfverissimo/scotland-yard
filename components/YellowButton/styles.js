@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     width: '80%',
     height: 64,
     borderRadius: 8,
+    marginVertical: 10
   },
   text: {
     fontFamily: 'Roboto_700Bold',

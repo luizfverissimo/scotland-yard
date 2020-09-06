@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     fontSize: 64,
     color: colors.yellow,
     textAlign: 'right'
+  },
+  buttonContainer: {
+    width: '100%',
+    alignItems: 'center',
   }
   
 })

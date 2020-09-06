@@ -23,6 +23,14 @@ const styles = StyleSheet.create({
     width: '90%',
     alignItems: 'center',
     marginBottom: 32
+  },
+  barContainer: {
+    width: '90%',
+    marginTop: 32,
+  },
+  iconContainer: {
+    alignItems: 'center',
+    marginTop: 12
   }
 })
 

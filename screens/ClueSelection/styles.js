@@ -21,13 +21,11 @@ const styles = StyleSheet.create({
   },
   flatlist: {
     width: '90%',
-    marginVertical: 10
   },
   flatlistItem: {
     width: '100%'
   },
   buttonContainer: {
-    marginVertical: 10,
     alignItems: 'center'
   }
 });

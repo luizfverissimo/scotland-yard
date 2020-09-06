@@ -17,11 +17,18 @@ const StartScreen = () => {
         <Image source={logo} style={styles.logo} />
         <Text style={styles.title}>Scotland Yard</Text>
       </View>
-      <YellowButton
-        text='Iniciar Investigação'
-        icon='magnify'
-        onPressAction={() => navigate('caseSelection')}
-      />
+      <View style={styles.buttonContainer}>
+        <YellowButton
+          text='Iniciar Investigação'
+          icon='magnify'
+          onPressAction={() => navigate('caseSelection')}
+        />
+        <YellowButton
+          text='Configurações'
+          icon='cogs'
+          onPressAction={() => navigate('caseSelection')}
+        />
+      </View>
     </View>
   );
 };
