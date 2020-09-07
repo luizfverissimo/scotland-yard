@@ -9,7 +9,7 @@ import YellowButton from '../../components/YellowButton';
 import data from '../../data/data.json';
 
 const CaseSelection = () => {
-  const { navigate } = useNavigation();
+  const { navigate, goBack } = useNavigation();
 
   const renderFlatlistItem = ({ item }) => {
     return (
@@ -36,7 +36,7 @@ const CaseSelection = () => {
 
   return (
     <View style={styles.container}>
-      <Header title={'Selecione o caso'} />
+      <Header title={'Selecione o caso'} onPressBackAction={goBack}/>
       <FlatList
         style={styles.flatlist}
         data={data.pistas}

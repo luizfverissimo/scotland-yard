@@ -7,13 +7,13 @@ import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
 import colors from '../../constants/colors';
 
-const Header = ({ title, numCase }) => {
-  const { goBack } = useNavigation();
+const Header = ({ title, numCase, onPressBackAction }) => {
+  
 
   return (
     <View style={styles.container}>
       <View style={styles.buttonContainer}>
-        <BorderlessButton onPress={goBack}>
+        <BorderlessButton onPress={onPressBackAction}>
           <Ionicons name='md-arrow-back' size={32} color={colors.red} />
         </BorderlessButton>
       </View>

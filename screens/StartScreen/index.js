@@ -26,7 +26,7 @@ const StartScreen = () => {
         <YellowButton
           text='Configurações'
           icon='cogs'
-          onPressAction={() => navigate('caseSelection')}
+          onPressAction={() => navigate('configScreen')}
         />
       </View>
     </View>

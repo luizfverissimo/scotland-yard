@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import ProgressBar from 'react-native-progress/Bar';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import styles from './styles';
 import colors from '../../constants/colors';
@@ -12,17 +13,41 @@ import YellowButton from '../../components/YellowButton';
 
 const ClueScreen = ({ route }) => {
   const [progressBarValue, setProgressBarValue] = useState(0);
+  const [limit, setLimit] = useState('');
 
   const clueParams = route.params ? route.params.place : null;
   const clue = route.params ? route.params.clue : null;
 
   const { goBack } = useNavigation();
 
-  const limit = 10;
-  let timer = 0;
-  const progressIncrement = 1 / limit;
+  const getData = async () => {
+    try {
+      const value = await AsyncStorage.getItem('clueTime');
+      if (value !== null) {
+        return value;
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   useEffect(() => {
+    const loadTimeConfig = async () => {
+      try {
+        const time = await getData();
+        setLimit(time);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    loadTimeConfig();
+  }, []);
+
+  useEffect(() => {
+    let timer = 0;
+    const progressIncrement = 1 / Number(limit);
+    console.log(progressIncrement);
+
     const interval = setInterval(() => {
       if (timer >= limit) {
         clearInterval(interval);
@@ -37,11 +62,16 @@ const ClueScreen = ({ route }) => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [limit]);
 
   return (
     <View style={styles.container}>
-      <Header title={clueParams.name} />
+      <Header
+        title={clueParams.name}
+        onPressBackAction={() => {
+          goBack();
+        }}
+      />
       <View style={styles.content}>
         <Text style={styles.clue}>{clue}</Text>
         <View style={styles.barContainer}>
@@ -56,7 +86,11 @@ const ClueScreen = ({ route }) => {
             borderWidth={0}
           />
           <View style={styles.iconContainer}>
-            <MaterialCommunityIcons name='clock' size={36} color={colors.carBackground} />
+            <MaterialCommunityIcons
+              name='clock'
+              size={36}
+              color={colors.carBackground}
+            />
           </View>
         </View>
       </View>

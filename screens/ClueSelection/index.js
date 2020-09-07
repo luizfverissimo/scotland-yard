@@ -85,7 +85,7 @@ const ClueSelection = ({ route }) => {
   const caseNumber = route.params ? route.params.numCase : null;
   const caseClues = data.pistas.filter((item) => item.caso === caseNumber);
 
-  const { navigate } = useNavigation();
+  const { navigate, goBack } = useNavigation();
 
   const renderFlatlistItem = ({ item }) => {
     return (
@@ -101,7 +101,7 @@ const ClueSelection = ({ route }) => {
 
   return (
     <View style={styles.container}>
-      <Header title={caseClues[0].nomecaso} numCase={caseClues[0].caso} />
+      <Header title={caseClues[0].nomecaso} numCase={caseClues[0].caso} onPressBackAction={goBack}/>
       <View style={styles.content}>
         <Text style={styles.description}>
           Selecione os locais para buscar pistas
