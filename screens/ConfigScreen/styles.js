@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     width: '90%',
   },
   content: {
-    width: '90%',
+    width: '100%',
     alignItems: 'center',
   },
   description: {
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: colors.carBackground,
     width: '100%',
-    marginTop: 12,
+    marginVertical: 12,
     alignItems: 'center',
     borderRadius: 8,
     minHeight: 100,

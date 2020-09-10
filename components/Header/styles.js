@@ -5,7 +5,7 @@ import colors from '../../constants/colors'
 const styles = StyleSheet.create({
   container: {
     width: '90%',
-    marginTop: 42,
+    marginTop: 12,
     marginBottom: 12
   },
   buttonContainer: {

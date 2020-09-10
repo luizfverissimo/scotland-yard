@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 import { AppLoading } from 'expo';
 
 import { useFonts, OpenSans_700Bold } from '@expo-google-fonts/open-sans';
 import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 
 import AppNavigator from './navigation/AppNavigator';
+
+import colors from './constants/colors'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -21,7 +22,7 @@ export default function App() {
     return (
       <SafeAreaView style={{ flex: 1 }}>
         <AppNavigator />
-        <StatusBar style='light' />
+        <StatusBar barStyle='light-content'  backgroundColor={colors.primary} />
       </SafeAreaView>
     );
   }

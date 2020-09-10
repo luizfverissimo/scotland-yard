@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "scotland-yard",
+    "name": "Pistas Scotland Yard",
     "slug": "scotland-yard",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon-scotland-yard.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-scotland-yard.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#571845"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,6 +18,19 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.luizfverissimo.scotlandyard",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-scotland-yard-transp.png",
+        "backgroundColor": "#571845"
+      }
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#571845",
+      "barStyle": "light-content"
+
     },
     "web": {
       "favicon": "./assets/favicon.png"

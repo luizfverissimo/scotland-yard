@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   },
   flatlist: {
     width: '90%',
+    marginTop: 10
   },
   flatlistItem: {
     width: '100%'
